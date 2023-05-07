@@ -270,6 +270,12 @@ article{
     .map{
         width: 100%;
     }
+    .normal-menu{
+        display: none;
+    }
+    .hamburger-menu{
+        display: block;
+    }
 }
 @media screen and (max-width: 480px){
     .header-title-container{
@@ -277,12 +283,6 @@ article{
     }
     .header-nav-container{
         width: 20%;
-    }
-    .normal-menu{
-        display: none;
-    }
-    .hamburger-menu{
-        display: block;
     }
     main{
         background-size: cover;
