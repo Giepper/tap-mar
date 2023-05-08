@@ -6,6 +6,7 @@ const closeModal = document.querySelector('.close-modal');
 const phoneMenu = document.querySelector('.phone-menu');
 const hamburger = document.querySelector('.hamburger');
 const phoneA = document.querySelectorAll('.phone-a');
+const galleryImage = document.querySelectorAll('.gallery-image');
 
 showMore.addEventListener('click', ()=>{
     showMoreContainer.style.setProperty('display','none');
@@ -32,3 +33,16 @@ for(let x=0;x<phoneA.length;x++){
         setTimeout(()=>{phoneMenu.style.setProperty('display','none')},500);
     });
 }
+
+// for(let x=0;x<galleryImage.length;x++){
+//     galleryImage[x].addEventListener('mouseover', ()=>{
+//         setTimeout(()=>{
+//             galleryImage[x].classList.add('gallery-image-hover');
+//             galleryImage[x].classList.remove('gallery-image-hover-deactive');}
+//         ,500)
+//     });
+//     galleryImage[x].addEventListener('mouseleave', ()=>{
+//         galleryImage[x].classList.remove('gallery-image-hover');
+//         galleryImage[x].classList.add('gallery-image-hover-deactive');
+//     });
+// }
