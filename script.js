@@ -7,15 +7,25 @@ const phoneMenu = document.querySelector('.phone-menu');
 const hamburger = document.querySelector('.hamburger');
 const phoneA = document.querySelectorAll('.phone-a');
 const galleryImage = document.querySelectorAll('.gallery-image');
+const hiddenImage = document.querySelectorAll('.hidden-image');
+const openGallery = document.querySelector('.open-gallery');
 
 showMore.addEventListener('click', ()=>{
     showMoreContainer.style.setProperty('display','none');
     hiddenGallery.style.setProperty('display','block');
+
+    for(let x=0;x<hiddenImage.length;x++){
+        hiddenImage[x].style.setProperty('display','inline');
+    }
 });
 
 showLess.addEventListener('click', ()=>{
     showMoreContainer.style.setProperty('display','block');
     hiddenGallery.style.setProperty('display','none');
+
+    for(let x=0;x<hiddenImage.length;x++){
+        hiddenImage[x].style.setProperty('display','none');
+    }
 });
 
 closeModal.addEventListener('click', ()=>{
